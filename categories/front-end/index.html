@@ -7,7 +7,7 @@
 
     
 
-    <title>Archives: 2019 | Hello Mr.Bean</title>
+    <title>Category: front-end | Hello Mr.Bean</title>
     <meta name="author" content="Aaron Shi">
     <meta name="version" content="1.0.0">
     <meta name="keywords" content>
@@ -41,7 +41,7 @@
                 <span class="nav-text">首页</span>
             </a>
         
-            <a class="nav-item" href="/categories/front-end">
+            <a class="nav-item active" href="/categories/front-end">
                 <span class="nav-text">前端</span>
             </a>
         
@@ -53,7 +53,7 @@
                 <span class="nav-text">标签</span>
             </a>
         
-            <a class="nav-item active" href="/archives">
+            <a class="nav-item" href="/archives">
                 <span class="nav-text">归档</span>
             </a>
         
@@ -130,84 +130,66 @@
 </header>
 
         <div id="content" class="content">
-
-
+    <article class="article" itemscope itemprop="blogPost">
     
-    
-    
-    
-    
-    <section class="archives-wrap">
-    <div class="archive-year-wrap">
-    <a href="/archives/2019" class="page-hd">
-        2019
-    </a>
-    </div>
-    <ol class="archives">
-    
-
-    <li class="archive-section-item">
+    <header class="article-header">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/06/05/hexo/">建立 Hexo</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/06">
-    
-    <time datetime="2019-06-04T17:31:41.000Z" itemprop="datePublished">6/5</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
-
-    
-    
-
-    <li class="archive-section-item">
+        <h1 itemprop="name">
+            <a href="/2019/06/05/hexo/">建立 Hexo</a>
+        </h1>
         
-<article class="archive-article archive-type-[layout]">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/06/04/JAAS/">JAAS</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/06">
+        <div class="article-meta clearfix">
+            <a class="article-date" href="http://yoursite.com/categories/front-end/index.html">
     
-    <time datetime="2019-06-03T17:27:12.000Z" itemprop="datePublished">6/4</time>
+    <i class="icon-calendar"></i>
+    
+    <time datetime="2019-06-04T17:31:41.000Z" itemprop="datePublished">2019-06-05</time>
 </a>
-)
-            </span>
-        </header>
-    </div>
-</article>
-    </li>
 
-    
-    
+            
+<div class="article-tag-list">
+    <i class="icon-tag"></i>
+    <a class="article-tag-link" href="/tags/Hexo/">Hexo</a>
+</div>
 
-    <li class="archive-section-item">
+
+        </div>
+    </header>
+    
+    <section class="article-body markdown-body">
         
-<article class="archive-article archive-type-post">
-    <div class="archive-article-inner">
-        <header class="archive-article-header">
-            <a class="archive-article-link" href="/2019/06/04/hello-world/">Hello World</a>
-            <span class="archive-article-date">
-                (<a class="article-date" href="/archives/2019/06">
-    
-    <time datetime="2019-06-03T17:24:35.580Z" itemprop="datePublished">6/4</time>
-</a>
-)
-            </span>
-        </header>
-    </div>
+        <p>npm设置淘宝NPM镜像，来提高下载速度<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="noopener">https://registry.npm.taobao.org</a></p>
+<p>安装Hexo<br>npm install -g hexo-cli</p>
+<p>用命令行查看是否安装成功<br>hexo -version</p>
+<p>初始化Hexo<br>hexo init</p>
+
+
+<p>启动Hexo服务<br>hexo s</p>
+<p>也可以开启debug模式，debug模式可以实时更新，方便查看修改后的结果。<br>hexo s –debug</p>
+<p>Hexo常用命令<br>    创建一篇文章<br>    hexo new [layout] <title></title></p>
+<pre><code>generate
+generate命令是用来生成静态文件的，在我们发布到GitHub的仓库的时候，需要先生成，才能上传。
+hexo generate 或者 hexo g
+
+server
+开启服务器，网址为http://localhost:4000
+hexo server 或者 hexo s
+
+deploy
+部署网址，上传到我们的GitHub的仓库上面。
+hexo deploy 或者 hexo d
+
+clean
+清除缓存文件 (db.json) 和已生成的静态文件 (public)。在某些情况（尤其是更换主题后），如果对站点的更改无论如何也不生效，运行该命令。
+hexo clean
+
+一般我们上传到GitHub的时候我们用这条命令来执行，生成静态文件并且部署到服务器。
+hexo g -d </code></pre>
+        
+    </section>
 </article>
-    </li>
 
 
-</ol></section>
 
 
 
